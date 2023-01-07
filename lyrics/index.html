@@ -5,5 +5,36 @@
 	<meta id="meta-title" property="og:title" content="lyrics">
 	<meta id="meta-desc" property="og:description" content="find mostly accurate lyrics to songs">
 	<meta id="meta-image" name="og:image" content="https://masalt2.github.io/lyrics/lyricsicon.png" itemprop="image">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 </head>
-l
+<html>
+<p>search lowercase:</p>
+<body style=" background-color: rgb(233, 242, 247);">
+    <input type="search" value="" id="search" onchange="openPage()">
+
+    <script>
+        function openPage() {
+            var s = document.getElementById("search").value;
+
+            if (s === "feral") {
+                window.open("/feral.html");
+            }
+
+            if (s === "lotus flower") {
+                window.open("/lotusflower.html");
+            }
+
+            if (s === "morning bell") {
+                window.open("/morningbell.html");
+            }
+
+        }
+    </script>
+</body>
+<p>or just search through all the links:</p>
+<a href="/feral.html">feral</a>
+<a href="/lotusflower.html">lotus flower</a>
+<a href="/morningbell.html">morning bell</a>
+</html>
