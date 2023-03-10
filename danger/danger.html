@@ -8,6 +8,14 @@
 <button onClick="window.location.reload();">sit down, stand up</button>
 </body>
 <script>
+function random_bg_color() {
+    var x = Math.floor(Math.random() * 50);
+    var y = Math.floor(Math.random() * 50);
+    var z = Math.floor(Math.random() * 50);
+    var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+    document.body.style.background = bgColor;
+    }
+random_bg_color();
 var t = Math.ceil(Math.random() * 51);
 if (t == 1) {
   document.getElementById("text").innerHTML =  "as lotus flowers";
